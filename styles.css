@@ -402,7 +402,7 @@ section p { max-width: 68ch; }
   margin-bottom: 14px;
 }
 
-.podcast-card, .book-card {
+.podcast-card, .book-card, .award-card {
   display: flex;
   gap: 22px;
   align-items: flex-start;
@@ -422,10 +422,18 @@ section p { max-width: 68ch; }
   flex-shrink: 0;
   box-shadow: var(--shadow-lg);
 }
+.award-photo {
+  width: 110px;
+  height: auto;
+  border-radius: 10px;
+  flex-shrink: 0;
+  box-shadow: var(--shadow-lg);
+}
 @media (max-width: 480px) {
-  .podcast-card, .book-card { flex-direction: column; }
+  .podcast-card, .book-card, .award-card { flex-direction: column; }
   .podcast-cover { width: 100px; height: 100px; }
   .book-cover { width: 110px; }
+  .award-photo { width: 100px; }
 }
 
 .card h3 { margin: 0 0 6px; font-size: 17.5px; letter-spacing: -0.005em; }
