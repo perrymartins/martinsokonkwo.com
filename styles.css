@@ -211,6 +211,13 @@ header.hero::after {
 .link-group { margin: 0 0 36px; }
 .link-group:last-child { margin-bottom: 0; }
 
+.tagline-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
 .tagline-pill {
   display: inline-flex;
   align-items: center;
@@ -223,8 +230,15 @@ header.hero::after {
   text-transform: uppercase;
   padding: 9px 18px;
   border-radius: 999px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   box-shadow: var(--shadow);
+}
+
+.tagline-pill.outline {
+  background: transparent;
+  color: var(--cream);
+  border: 1.5px solid var(--accent);
+  box-shadow: none;
 }
 
 .social-row {
