@@ -387,6 +387,16 @@ section p { max-width: 68ch; }
 }
 .card:hover::before { opacity: 1; }
 
+.venture-logo {
+  display: block;
+  height: 34px;
+  width: auto;
+  max-width: 160px;
+  margin-bottom: 14px;
+  object-fit: contain;
+  object-position: left center;
+}
+
 .badge {
   width: 40px;
   height: 40px;
