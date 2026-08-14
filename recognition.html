@@ -12,6 +12,7 @@
 <meta property="og:url" content="https://martinsokonkwo.com/recognition.html">
 <meta property="og:image" content="https://martinsokonkwo.com/assets/headshot.jpg">
 <meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23150a0b'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' font-weight='700' fill='%231e86e8' text-anchor='middle'%3EMO%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="styles.css">
 <script type="application/ld+json">
 {
@@ -74,28 +75,29 @@
     <a href="/book.html">Book</a>
     <a href="/podcast.html">Podcast</a>
     <a href="/press.html">Press</a>
+    <a href="/contact.html">Contact</a>
   </div>
 </nav>
 
 <main>
   <section id="recognition">
-    <div class="wrap">
+    <div class="wrap reveal">
       <h1 class="page-title">Recognition</h1>
       <p class="page-intro">Awards, fellowships, memberships and leadership roles held by Martins Okonkwo (Perry Martins).</p>
 
-      <h2>Awards</h2>
+      <h2 class="eyebrow">Awards</h2>
       <ul class="plain">
         <li class="award"><span class="year">2023</span><span>Trailblazer Award, Kingdom Achievers Awards — for his work with Gospotainment</span></li>
       </ul>
 
-      <h2 style="margin-top:36px;">Fellowships &amp; Memberships</h2>
+      <h2 class="eyebrow" style="margin-top:36px;">Fellowships &amp; Memberships</h2>
       <ul class="plain">
         <li class="award"><span class="year">—</span><span>Alumnus, Tony Elumelu Entrepreneurship Foundation (TEF)</span></li>
         <li class="award"><span class="year">—</span><span>Alumnus, Young African Leaders Initiative (YALI) West Africa</span></li>
         <li class="award"><span class="year">—</span><span>Member, Thomson Foundation</span></li>
       </ul>
 
-      <h2 style="margin-top:36px;">Leadership</h2>
+      <h2 class="eyebrow" style="margin-top:36px;">Leadership</h2>
       <ul class="plain">
         <li class="award"><span class="year">—</span><span>Founder and First President, <a href="https://iacmp.ng/" target="_blank" rel="noopener">International Association of Christian Media Practitioners (IACMP)</a>, Nigeria — a non‑profit association for Christian media practitioners</span></li>
       </ul>
@@ -105,24 +107,22 @@
 
 <footer>
   <div class="wrap">
-    <p>Follow Martins Okonkwo's work across his ventures and social profiles.</p>
-    <div class="social-row">
-      <a href="https://www.linkedin.com/in/perrymartins/" rel="me noopener" target="_blank">LinkedIn</a>
-      <a href="https://www.instagram.com/iamperrymartins/" rel="me noopener" target="_blank">Instagram</a>
-      <a href="https://www.facebook.com/iamperrymartins1" rel="me noopener" target="_blank">Facebook</a>
-      <a href="https://gospelbuzz.com/" rel="noopener" target="_blank">Gospelbuzz</a>
-      <a href="https://yivera.com/" rel="noopener" target="_blank">Yivera</a>
-      <a href="https://giglive.co/" rel="noopener" target="_blank">Giglive</a>
-      <a href="https://open.spotify.com/show/4xokyrJndp3mYSt9jHyP4p" rel="noopener" target="_blank">Podcast</a>
-      <a href="https://iacmp.ng/" rel="noopener" target="_blank">IACMP</a>
-    </div>
-    <p style="margin-top:24px;">&copy; <span id="year"></span> Martins Okonkwo. All rights reserved.</p>
+    <p class="footer-brand">Martins Okonkwo</p>
+    <p>Media, music &amp; creative tech entrepreneur.</p>
+    <nav class="footer-links">
+      <a href="/">Home</a>
+      <a href="/ventures.html">Ventures</a>
+      <a href="/recognition.html">Recognition</a>
+      <a href="/book.html">Book</a>
+      <a href="/podcast.html">Podcast</a>
+      <a href="/press.html">Press</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+    <p class="copyright">&copy; <span id="year"></span> Martins Okonkwo. All rights reserved.</p>
   </div>
 </footer>
 
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+<script src="script.js" defer></script>
 
 </body>
 </html>
