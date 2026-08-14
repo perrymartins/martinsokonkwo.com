@@ -252,23 +252,34 @@ header.hero .social-row a:hover { border-color: var(--accent); background: rgba(
 
 /* ---------- Nav ---------- */
 
-nav.subnav {
+/* ---------- Site header (logo + nav, one bar) ---------- */
+
+header.site-header {
   position: sticky;
   top: 0;
-  background: linear-gradient(120deg, var(--accent-strong), var(--accent));
-  z-index: 10;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  z-index: 20;
+  background: var(--dark-bg);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
 }
 
-nav.subnav .wrap {
+.site-header-inner {
   display: flex;
-  gap: 22px;
-  padding: 13px 24px;
-  overflow-x: auto;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px 24px;
+  padding: 14px 24px;
 }
 
-nav.subnav a {
-  color: rgba(255,255,255,0.85);
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.site-nav a {
+  color: rgba(244,238,224,0.75);
   text-decoration: none;
   font-size: 14px;
   font-weight: 600;
@@ -277,28 +288,12 @@ nav.subnav a {
   transition: color .15s ease;
 }
 
-nav.subnav a:hover { color: #fff; }
-nav.subnav a.active {
-  background: var(--dark-bg);
-  color: var(--cream);
+.site-nav a:hover { color: var(--cream); }
+.site-nav a.active {
+  background: var(--accent);
+  color: #fff;
   padding: 5px 14px;
   border-radius: 999px;
-}
-
-/* ---------- Compact page header ---------- */
-
-header.page-header {
-  position: relative;
-  background: var(--dark-bg);
-  padding: 22px 0;
-  overflow: hidden;
-}
-
-header.page-header::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(ellipse 420px 220px at 90% 0%, rgba(30,134,232,0.30), transparent 65%);
 }
 
 .brand {
@@ -311,16 +306,22 @@ header.page-header::before {
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 18px;
+  flex-shrink: 0;
 }
 
 .brand-avatar {
-  width: 42px;
-  height: 42px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   object-fit: cover;
   object-position: 50% 12%;
   flex-shrink: 0;
   border: 2px solid var(--accent);
+}
+
+@media (max-width: 640px) {
+  .site-header-inner { justify-content: flex-start; }
+  .site-nav { gap: 14px 16px; }
 }
 
 /* ---------- Section typography ---------- */
